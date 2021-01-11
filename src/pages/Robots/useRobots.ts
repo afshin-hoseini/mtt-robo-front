@@ -12,12 +12,10 @@ export const useRobots = () => {
     }, []);
 
     const stopRobot = useCallback((id: number)=>{
-        console.log("===>", id)
+       
         socketRef.current?.emit("stopRobot", id);
     }, []);
     useEffect(() => {
-
-        console.log("====>", process.env.REACT_APP_SERVER)
         const socket = io(process.env.REACT_APP_SERVER!, {transports:['websocket']});
         socketRef.current = socket;
 
