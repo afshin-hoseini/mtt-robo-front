@@ -1,0 +1,27 @@
+.robots-controller{
+    display: flex;
+    flex-direction: column;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.status {
+    text-align: left;
+    margin-left: 16px;
+}
+.status.connected {
+    color: green;
+}
+
+.status.disconnected {
+    color: red;
+}
+
+@media only screen and (min-width: 600px) {
+    .robots-controller{
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,18 @@
+.robot-list__container {
+    width: 400px;
+    margin: 0 8px;
+}
+
+.robot-list {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.robot-list__item {
+
+    text-align: left;
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid rgb(92, 92, 240);
+}

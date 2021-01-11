@@ -1,0 +1,18 @@
+.add-robot__container{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+}
+
+.add-robot__btn {
+    min-height: 40px;
+    font-weight: bold;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.add-robot__options {
+    width: 100%;
+    min-height: 400px;
+}
