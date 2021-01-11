@@ -16,7 +16,9 @@ export const useRobots = () => {
         socketRef.current?.emit("stopRobot", id);
     }, []);
     useEffect(() => {
-        const socket = io('http://localhost:8081', {transports:['websocket']});
+
+        console.log("====>", process.env.REACT_APP_SERVER)
+        const socket = io(process.env.REACT_APP_SERVER!, {transports:['websocket']});
         socketRef.current = socket;
 
         socket.on("connect", ()=>setIsConnected(true));
